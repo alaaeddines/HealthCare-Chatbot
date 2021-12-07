@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet" href = "\static\style.css">
+    <title>Chat Window</title>
+</head>
+<body>
+
+        <section>
+            <img class = "avatar1" src = "\static\img\bot.png" alt = "">
+            <h1>Chatbot d'assistance pour les malades</h1>
+            <p>Cliquez sur le bouton pour commencer à discuter</p><br>
+
+            <button class = "chat-btn">
+                <i class="material-icons">chat</i>
+            </button>
+
+            <div class = "chat-popup">
+                <div class = "chat-area">
+                    <div class = "income-msg">
+                        <img class = "avatar" src = "\static\img\bot.png" alt = "">
+                        <span class= "msg">Bonjour, comment puis-je vous aider?<br>Pour avoir de l'aide tappez "Fonctionnalites"</span>
+                    </div>
+                </div>
+
+                <div class = "input-area">
+                    <input type = "text" id = "test1">
+                    <button class = "submit" onclick="myFunction()" id = "mybutton"><i class = "material-icons">send</i></button>
+                    <script>
+                        var input = document.getElementById("test1");
+                        input.addEventListener("keyup", function(event) {
+                          if (event.keyCode === 13) {
+                           event.preventDefault();
+                           document.getElementById("mybutton").click();
+                          }
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
+    
+        <script type="text/javascript" src = "static\main.js"></script>
+
+</body>
+</html>

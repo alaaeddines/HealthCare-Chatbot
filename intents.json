@@ -1,0 +1,93 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Salut",
+        "ca va ?",
+        "est tu l'as?",
+        "bonne journee"
+      ],
+      "responses": [
+        "Salut :-)",
+        "Salut, merci pour utiliser l'app",
+        "Salut, tu veux une aide?"
+        
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Au revoir"],
+      "responses": [
+        "au revoir, merci pour l'utilisation",
+        "bonne journée"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["merci", "merci beaucoup"],
+      "responses": ["de rien", "c'est pas grave!", "avec plaisir"]
+    },
+    {
+      "tag": "fonction",
+      "patterns": [
+        "qu'est ce que tu peux faire ?",
+        "fonctionnalites"
+      ],
+      "responses": [
+        "Avec ce chatbot , vous pouvez consulter les pharmacies de garde avec la commande pharma: suivi du nom de votre ville.<br>
+         vous pouvez consulter les numeros des hopitaux avec la commande hopital: suivi du nom de votre ville.<br>
+         vous pouvez faire une recherche wikipedia avec la commande wiki:<br>
+         pour envoyer votre etat a votre medecin , utiliser la commande je sens:<br>
+         pour afficher la liste des medicaments, utiliser la commande afficher:,pour ajouter un medicament utiliser la commande ajouter: suivi du nom du medicament puis un commentaire,pour supprimer la liste utiliser la commande supprimer:"
+        
+      ]
+    },
+    {
+      "tag": "pharmacy",
+      "patterns": [
+        "pharmacie de garde",
+        "pharmacien",
+        "pharmacie de nuit"
+      ],
+      "responses": [
+        "Avec ce chatbot , vous pouvez consulter les pharmacies de garde avec la commande pharma: suivi du nom de votre ville."
+      ]
+    }, {
+      "tag": "liste",
+      "patterns": [
+        "liste des medicaments",
+        "les medicaments"
+      ],
+      "responses": [
+        "pour afficher la liste des medicaments, utiliser la commande afficher:,pour ajouter un medicament utiliser la commande ajouter: suivi du nom du medicament puis un commentaire,pour supprimer la liste utiliser la commande supprimer:"
+      ]
+    },{
+      "tag": "information",
+      "patterns": [
+        "je veux des informations à propos  ",
+        "c'est quoi",
+        "wikipedia",
+        "rechercher "
+      ],
+      "responses": [
+        "vous pouvez faire une recherche wikipedia avec la commande wiki: "
+       
+      ]
+    },
+
+    {
+      "tag": "urgence",
+      "patterns": [
+        "numero urgence",
+        "police numero",
+        "hopital numero",
+        "SAMU"
+      ],
+      "responses": [
+        "numero d'urgence:15  numero de police :19 numero d'ambulance:150 SAMU:022905050"
+        
+      ]
+    }
+  ]
+}
